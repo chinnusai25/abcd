@@ -6,3 +6,47 @@ salut
 morning
 conflict
 abhishek
+REVIEW DOCUMENT
+Team : Jayanvika
+Mallika Subramanian 2018101041
+Tanvi Karandikar 2018101059
+Jayati Narang 2018101066
+The ER Diagram depicts the software requirements for the mini world, “IIIT-H Student Details”. The
+convention followed for the diagram is the standard convention of symbols. The first ER diagram has
+been drawn exactly as per the SRS, not meddling with the format.
+A second ER diagram has also been created that suggests some changes and corrects some of the
+elements in the requirements. The modifications have been highlighted in the second ER diagram.
+Newly added attributes are colored purple.
+The differences in the two are as follows:
+➔ For the entity “BRANCH” branch code has been made the primary key instead of branch name,
+since it is the most appropriate to uniquely identify a record.
+➔ For the entity “HOSTEL”, no primary key was specified. Hostel Name has been made the
+primary key.
+➔ For the entity “CARETAKER” employee ID has been made the primary key instead of employee
+name, since 2 or more employees can have the same name resulting in a conflicting primary key.
+➔ The entity “PARENT/GUARDIAN” is a weak entity. Each record should be identifiable by a
+combination of more than one attribute. Hence the attribute , “STUDENT ID” has been added.
+Now every record can be uniquely identified by the Name+Student ID.
+➔ The subclasses of the entity “BRANCH” must be entities themselves that inherit all properties of
+the parent entity. These subclasses must, therefore, have at least one attribute. The ROLL NO of
+the students studying in each branch has been added as an attribute for each subclass.
+➔ Similarly, the subclasses of the entity “HOSTEL” must be entities that inherit the properties of
+“HOSTEL”. Hence ROLL NO, ROOM NO, ROOM TYPE of the students staying in each hostel
+has been added as an attribute for each subclass. ROLL NO is a multivalued attribute that lists
+the roll numbers of the student staying in that room.
+Key:
+Symbol Interpretation
+Strong Entity
+Weak Entity
+Relation
+Attribute
+Derived Attribute
+Multi-Value Attribute
+Subclass
+Full Participation
+Partial Participation
+Cardinality
+(Please note there is a misprint in the first diagram, AGE attribute should be directly connected to
+student entity. It is correctly printed in the second diagram.)
+
+
